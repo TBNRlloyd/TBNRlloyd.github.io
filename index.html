@@ -3,67 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Website Template</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Optional: Link to a font from Google Fonts -->
-    <link href="fonts.googleapis.com" rel="stylesheet">
+    <title>AP CS Projects Portfolio</title>
+    <style>
+        /* Basic CSS Reset and Setup */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* Light background color */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        header {
+            background: #007BFF; /* Primary accent color (Blue) */
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0056b3 3px solid;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .project-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h2 {
+            color: #007BFF;
+            margin-top: 0;
+        }
+
+        /* Button Styling */
+        .project-button {
+            display: inline-block;
+            background: #28a745; /* Button color (Green) */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .project-button:hover {
+            background: #218838;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <header>
-        <nav>
-            <div class="logo">MySite</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+        <div class="container">
+            <h1>Welcome to My AP Computer Science Portfolio</h1>
+            <p>Showcasing my projects and progress in the course.</p>
+        </div>
     </header>
 
-    <!-- Main Content/Hero Section -->
-    <main>
-        <section id="home" class="hero">
-            <h1>Build a Great Website</h1>
-            <p>A clean, responsive template for your next project.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </section>
+    <div class="container">
+        <h2>My Projects</h2>
+        
+        <div class="project-grid">
 
-        <!-- About Section -->
-        <section id="about" class="container">
-            <h2>About Us</h2>
-            <p>We provide excellent website templates to help you launch quickly and efficiently. Our designs are modern, clean, and fully responsive.</p>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">Web Design</div>
-                <div class="service-card">Development</div>
-                <div class="service-card">SEO Optimization</div>
+            <!-- PROJECT CARD 1 -->
+            <div class="project-card">
+                <h2>Project 1: The Maze Solver</h2>
+                <p>A Java-based application that uses recursion to find the shortest path through a dynamically generated maze.</p>
+                <!-- Link this button to a new HTML page or GitHub repo -->
+                <a href="project1-details.html" class="project-button">View Project Details</a>
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="container">
-            <h2>Contact</h2>
-            <p>Reach out to us via email: contact@mysite.com</p>
-        </section>
-    </main>
+            <!-- PROJECT CARD 2 -->
+            <div class="project-card">
+                <h2>Project 2: Encrypted Chat App</h2>
+                <p>A simple client-server application built with Python implementing basic Caesar cipher encryption.</p>
+                <!-- Link this button to a new HTML page or GitHub repo -->
+                <a href="project2-details.html" class="project-button">View Project Details</a>
+            </div>
 
-    <!-- Footer -->
+            <!-- PROJECT CARD 3 -->
+            <div class="project-card">
+                <h2>Project 3: Simple Arcade Game</h2>
+                <p>A basic 'Pong' clone created using the Processing library, focusing on object-oriented programming principles.</p>
+                 <!-- Link this button to a new HTML page or GitHub repo -->
+                <a href="project3-details.html" class="project-button">View Project Details</a>
+            </div>
+
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2025 MySite | All rights reserved.</p>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
