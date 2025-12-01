@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP CS Projects</title>
+    <style>
+        /* (Styles are mostly the same as before, just added the back-home-btn style) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; 
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        header {
+            background: #007BFF; 
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0056b3 3px solid;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .project-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h2 {
+            color: #007BFF;
+            margin-top: 0;
+        }
+
+        /* Button Styling */
+        .project-button {
+            display: inline-block;
+            background: #28a745; 
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .project-button:hover {
+            background: #218838;
+        }
+
+        /* New Style for the Back Home Button */
+        .back-home-btn {
+            display: inline-block;
+            background: #6c757d; /* Gray color */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        .back-home-btn:hover {
+            background: #5a6268;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>My AP Computer Science Projects</h1>
+            <p>Details about the exciting things I've built!</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Button to go back to the welcome page -->
+        <a href="welcome.html" class="back-home-btn">← Back to Home</a>
+
+        <div class="project-grid">
+
+            <!-- PROJECT CARD 1 -->
+            <div class="project-card">
+                <h2>Project 1: The Maze Solver</h2>
+                <p>A Java-based application that uses recursion to find the shortest path through a dynamically generated maze.</p>
+                <a href="project1-details.html" class="project-button">View Project Details</a>
+            </div>
+
+            <!-- PROJECT CARD 2 -->
+            <div class="project-card">
+                <h2>Project 2: Encrypted Chat App</h2>
+                <p>A simple client-server application built with Python implementing basic Caesar cipher encryption.</p>
+                <a href="project2-details.html" class="project-button">View Project Details</a>
+            </div>
+
+            <!-- PROJECT CARD 3 -->
+            <div class="project-card">
+                <h2>Project 3: Simple Arcade Game</h2>
+                <p>A basic 'Pong' clone created using the Processing library, focusing on object-oriented programming principles.</p>
+                <a href="project3-details.html" class="project-button">View Project Details</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
